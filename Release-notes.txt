@@ -1,0 +1,6 @@
+Version 1.0:
+=============
+- Uses native getElementsByClassName when applicable
+- Uses native XPath when applicable
+- Supports multiple class names, in any order
+- Supports being called in an element context
