@@ -7,6 +7,10 @@
 		<script type="text/javascript">
 			window.onload = function () {
 				var start = new Date();
+				var matches = getElementsByClassName("heading", "h1");
+				alert("Query: getElementsByClassName(\"heading\", \"h1\");\n\nMatches: " + matches.length + "\n\nTime (milliseconds): " + (new Date() - start));
+
+				var start = new Date();
 				var matches = getElementsByClassName("monkey");
 				alert("Query: getElementsByClassName(\"monkey\");\n\nMatches: " + matches.length + "\n\nTime (milliseconds): " + (new Date() - start));
 				
@@ -31,7 +35,8 @@
 	
 	<body>
 		
-		<h1>getElementsByClassName speed testing</h1>
+		<h1 class="heading">getElementsByClassName speed testing</h1>
+		<h2 class="heading">getElementsByClassName speed testing</h2>
 		
 		<div id="mini-monkey">
 			<div class="monkey"></div>

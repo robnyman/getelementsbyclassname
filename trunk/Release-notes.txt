@@ -1,3 +1,9 @@
+Version 1.0.1:
+=============
+- Minor performance improvement for the native getElementsByClassName approach and tag name checking
+- Fix for finding H1-H6 elements with the native getElementsByClassName approach
+
+
 Version 1.0:
 =============
 - Uses native getElementsByClassName when applicable
