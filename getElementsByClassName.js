@@ -5,15 +5,14 @@
 var getElementsByClassName = function (className, tag, elm){
 	if (document.getElementsByClassName) {
 		getElementsByClassName = function (className, tag, elm) {
-			tag = tag || "*";
 			elm = elm || document;
 			var elements = elm.getElementsByClassName(className),
-				nodeName = new RegExp("\\b" + ((tag !== "*")? tag : "[a-z]+") + "\\b", "i"),
+				nodeName = (tag)? new RegExp("\\b" + tag + "\\b", "i") : null,
 				returnElements = [],
 				current;
 			for(var i=0, il=elements.length; i<il; i+=1){
 				current = elements[i];
-				if(nodeName.test(current.nodeName)) {
+				if(!nodeName || nodeName.test(current.nodeName)) {
 					returnElements.push(current);
 				}
 			}
