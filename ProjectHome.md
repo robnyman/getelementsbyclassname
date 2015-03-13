@@ -1,0 +1,1 @@
+Utilizes native getElementsByClassName and XPath support, with a fallback to regular looping. Returns a real array instead of a node list. Supports IE 5.5+ and basically any other web browser being used today.
